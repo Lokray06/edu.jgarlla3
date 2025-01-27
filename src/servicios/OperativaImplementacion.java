@@ -18,8 +18,7 @@ public class OperativaImplementacion implements OperativaInterfaz
 
     Scanner sc = new Scanner(System.in);
     @Override
-    public void altaElemento()
-    {
+    public void altaElemento() {
         String nombre, descricion;
         int cantidad;
 
@@ -31,9 +30,11 @@ public class OperativaImplementacion implements OperativaInterfaz
 
         System.out.println("Introduce la cantidad:");
         cantidad = sc.nextInt();
+        sc.nextLine();
 
         elementos.add(new ElementoDTO(nombre, descricion, cantidad));
     }
+
 
     @Override
     public void bajaElemento()
